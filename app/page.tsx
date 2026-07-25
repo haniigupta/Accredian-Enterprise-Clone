@@ -4,6 +4,7 @@ import Clients from "@/src/components/sections/Clients";
 import AccredianEdge from "@/src/components/sections/AccredianEdge";
 import CAT from "@/src/components/sections/CAT";
 import HowItWorks from "@/src/components/sections/HowItWorks";
+import FAQ from "@/src/components/sections/FAQ";
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
       <AccredianEdge />
       <CAT />
       <HowItWorks />
+      <FAQ />
     </main>
   );
 }
