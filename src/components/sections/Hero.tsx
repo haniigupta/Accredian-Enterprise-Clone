@@ -12,14 +12,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-white py-10 lg:py-14"
+      className="bg-white py-6 lg:py-8"
     >
       <Container>
         <div className="overflow-hidden rounded-[36px] bg-[#EEF5FF] shadow-xl">
-          <div className="grid items-center gap-10 px-8 py-10 lg:grid-cols-2 lg:px-16 lg:py-14">
+          <div className="grid items-center gap-10 px-8 py-8 lg:grid-cols-[1fr_0.95fr] lg:px-14 lg:py-10">
             {/* Left */}
             <div>
-              <h1 className="text-5xl font-bold leading-tight text-black lg:text-7xl">
+              <h1 className="text-[52px] lg:text-[68px] font-bold leading-tight text-black ">
                 Next-Gen{" "}
                 <span className="text-[#2563EB]">
                   Expertise
@@ -31,7 +31,7 @@ export default function Hero() {
                 </span>
               </h1>
 
-              <p className="mt-10 max-w-xl text-2xl leading-relaxed text-gray-900">
+              <p className="mt-10 max-w-xl text-[22px] leading-relaxed text-gray-900">
                 Cultivate high-performance teams through
                 expert learning.
               </p>
@@ -67,7 +67,7 @@ export default function Hero() {
                 width={760}
                 height={720}
                 priority
-                className="h-auto w-full max-w-[720px]"
+                className="h-auto w-full max-w-[600px]"
               />
             </div>
           </div>
