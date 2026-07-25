@@ -22,22 +22,23 @@ export default function Header() {
                         width={170}
                         height={55}
                         priority
+                        className="h-auto w-auto"
                     />
                 </a>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden items-center gap-10 lg:flex">
                     {NAV_LINKS.map((item) => (
-                       <a
-  key={item.label}
-  href={item.href}
-  className={clsx(
-    "relative text-[16px] font-medium text-gray-800 transition hover:text-blue-600",
-    "after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
-  )}
->
-  {item.label}
-</a>
+                        <a
+                            key={item.label}
+                            href={item.href}
+                            className={clsx(
+                                "relative text-[16px] font-medium text-gray-800 transition hover:text-blue-600",
+                                "after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+                            )}
+                        >
+                            {item.label}
+                        </a>
                     ))}
                 </nav>
 
@@ -60,13 +61,13 @@ export default function Header() {
                 <nav className="flex flex-col bg-white px-6 py-4">
                     {NAV_LINKS.map((item) => (
                         <a
-  key={item.label}
-  href={item.href}
-  onClick={() => setIsOpen(false)}
-  className="cursor-pointer rounded-md py-3 text-gray-800 transition hover:text-blue-600"
->
-  {item.label}
-</a>
+                            key={item.label}
+                            href={item.href}
+                            onClick={() => setIsOpen(false)}
+                            className="cursor-pointer rounded-md py-3 text-gray-800 transition hover:text-blue-600"
+                        >
+                            {item.label}
+                        </a>
                     ))}
                 </nav>
             </div>
