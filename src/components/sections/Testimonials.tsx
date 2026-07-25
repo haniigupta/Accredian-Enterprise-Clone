@@ -53,15 +53,6 @@ export default function Testimonials() {
 
         </div>
 
-        {/* Slider Dots */}
-
-        <div className="mt-10 flex justify-center gap-3">
-
-          <div className="h-3 w-3 rounded-full bg-blue-600" />
-
-          <div className="h-3 w-3 rounded-full bg-gray-300" />
-
-        </div>
 
       </Container>
     </section>
