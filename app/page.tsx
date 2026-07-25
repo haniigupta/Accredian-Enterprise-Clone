@@ -6,6 +6,7 @@ import CAT from "@/src/components/sections/CAT";
 import HowItWorks from "@/src/components/sections/HowItWorks";
 import FAQ from "@/src/components/sections/FAQ";
 import Testimonials from "@/src/components/sections/Testimonials";
+import CTA from "@/src/components/sections/CTABaneer";
 export default function Home() {
   return (
     <main>
@@ -17,6 +18,7 @@ export default function Home() {
       <HowItWorks />
       <FAQ />
       <Testimonials />
+      <CTA />
     </main>
   );
 }
