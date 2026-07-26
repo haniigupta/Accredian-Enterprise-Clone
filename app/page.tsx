@@ -7,6 +7,8 @@ import HowItWorks from "@/src/components/sections/HowItWorks";
 import FAQ from "@/src/components/sections/FAQ";
 import Testimonials from "@/src/components/sections/Testimonials";
 import CTA from "@/src/components/sections/CTABaneer";
+import CourseSegmentation from "@/src/components/sections/CourseSegmentation";
+import DomainExpertise from "@/src/components/sections/DomainExpertise";
 export default function Home() {
   return (
     <main>
@@ -14,6 +16,8 @@ export default function Home() {
       <Stats />
       <Clients />
       <AccredianEdge />
+      <DomainExpertise />
+      <CourseSegmentation />
       <CAT />
       <HowItWorks />
       <FAQ />
