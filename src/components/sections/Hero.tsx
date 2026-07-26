@@ -1,6 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { CircleCheckBig } from "lucide-react";
+import { useState } from "react";
+
 import Container from "../common/Container";
+import Modal from "../common/Modal";
+import EnquiryForm from "../common/EnquiryForm";
 
 const features = [
   "Tailored Solutions",
@@ -9,6 +15,7 @@ const features = [
 ];
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
   return (
     <section
       id="home"
@@ -54,7 +61,10 @@ export default function Hero() {
                 ))}
               </div>
 
-              <button className="mt-12 rounded-xl bg-[#2563EB] px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-blue-700">
+              <button
+                onClick={() => setOpen(true)}
+                className="mt-12 rounded-xl bg-[#2563EB] px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-blue-700"
+              >
                 Enquire Now
               </button>
             </div>
@@ -73,6 +83,12 @@ export default function Hero() {
           </div>
         </div>
       </Container>
+      <Modal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+      >
+        <EnquiryForm />
+      </Modal>
     </section>
   );
 }
