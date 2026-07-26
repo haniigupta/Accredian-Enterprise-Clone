@@ -1,5 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Container from "../common/Container";
+import { X } from "lucide-react";
+import EnquiryForm from "../common/EnquiryForm";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -9,6 +15,7 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
+  const [showForm, setShowForm] = useState(false);
   return (
     <footer className="border-t py-16">
 
@@ -87,11 +94,12 @@ export default function Footer() {
 
           <div>
 
-            <button className="rounded-lg bg-[#2563EB] px-8 py-4 font-semibold text-white">
-
-              Enquire Now
-
-            </button>
+           <button
+  onClick={() => setShowForm(true)}
+  className="rounded-lg bg-[#2563EB] px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
+>
+  Enquire Now
+</button>
 
             <p className="mt-3 text-center text-sm text-gray-500">
               Speak with our Advisor
@@ -106,6 +114,22 @@ export default function Footer() {
         </div>
 
       </Container>
+      {showForm && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+    <div className="relative w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+
+      <button
+        onClick={() => setShowForm(false)}
+        className="absolute right-5 top-5 z-10 rounded-full p-2 text-gray-500 transition hover:bg-gray-100"
+      >
+        <X size={28} />
+      </button>
+
+      <EnquiryForm />
+
+    </div>
+  </div>
+)}
 
     </footer>
   );
