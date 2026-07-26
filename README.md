@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Accredian Enterprise Clone
 
-## Getting Started
+A responsive partial clone of the Accredian Enterprise website built using **Next.js App Router**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+**Reference Website:** https://enterprise.accredian.com/
+
+---
+
+## Live Demo
+
+**Live URL:** https://accredian-enterprise-clone-theta-three.vercel.app/
+
+## GitHub Repository
+
+https://github.com/haniigupta/Accredian-Enterprise-Clone
+
+---
+
+# Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Next.js API Routes
+
+---
+
+# Features
+
+- Responsive landing page
+- Component-based architecture
+- Smooth scrolling navigation
+- FAQ accordion
+- Reusable enquiry modal
+- Lead capture form
+- API integration using Next.js API Routes
+- Optimized images using Next.js Image
+
+---
+
+
+# Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/haniigupta/Accredian-Enterprise-Clone.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Approach
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project follows a modular, component-based architecture using the Next.js App Router.
 
-## Deploy on Vercel
+Each section of the landing page is implemented as an independent reusable component, making the codebase easier to maintain and extend.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Common UI elements are separated into reusable components, while React Hooks are used for interactive features such as the FAQ accordion and enquiry modal.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The enquiry form is connected to a Next.js API Route to demonstrate lead capture functionality without requiring a separate backend.
+
+---
+
+# AI Assistance
+
+AI tools were used as a development aid for planning the component structure, resolving a few implementation issues, and refining parts of the UI during development.
+
+All components, integration, testing, responsiveness adjustments, and project organization were implemented and reviewed manually.
+
+---
+
+# Future Improvements
+
+If given additional time, I would:
+
+- Improve mobile responsiveness to more closely match the reference website
+- Add client-side form validation
+- Display success/error notifications after form submission
+- Improve accessibility (ARIA labels and keyboard navigation)
+- Add subtle animations for a smoother user experience
+- Refactor repeated modal logic into a single reusable modal component
+
+---
+
+# Build Status
+
+The project builds successfully using:
+
+```bash
+npm run build
+```
+
+---
+
+# Author
+
+**Hani Gupta**
+
+B.Tech Computer Science Engineering
