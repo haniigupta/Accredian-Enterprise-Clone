@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Container from "../common/Container";
-import { Headphones } from "lucide-react";
+import { Headphones, X } from "lucide-react";
+import EnquiryForm from "../common/EnquiryForm";
 
 export default function CTA() {
+  const [showForm, setShowForm] = useState(false);
   return (
     <section className="py-20">
       <Container>
@@ -41,17 +46,34 @@ export default function CTA() {
               </div>
 
             </div>
-
-            <button className="rounded-xl bg-white px-10 py-5 text-xl font-semibold text-[#2563EB] transition hover:scale-105">
-
+            <button
+              onClick={() => setShowForm(true)}
+              className="rounded-xl bg-white px-10 py-5 text-xl font-semibold text-[#2563EB] transition hover:scale-105"
+            >
               Contact Us →
-
             </button>
 
           </div>
 
         </div>
       </Container>
+      {showForm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="relative w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+
+            <button
+              onClick={() => setShowForm(false)}
+              className="absolute right-5 top-5 z-10 rounded-full p-2 text-gray-500 transition hover:bg-gray-100"
+            >
+              <X size={28} />
+            </button>
+
+            <EnquiryForm />
+
+          </div>
+        </div>
+      )}
     </section>
+
   );
 }
