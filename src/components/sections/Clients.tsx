@@ -4,22 +4,22 @@ import Container from "../common/Container";
 const clients = [
   {
     name: "Reliance",
-    image: "/images/clients/reliance.png",
+    image: "/clients/reliance.svg",
     width: 120,
   },
   {
     name: "HCL",
-    image: "/images/clients/hcl.png",
+    image: "/clients/hcl.svg",
     width: 120,
   },
   {
     name: "IBM",
-    image: "/images/clients/ibm.png",
+    image: "/clients/ibm.svg",
     width: 100,
   },
   {
-    name: "CRF",
-    image: "/images/clients/crf.png",
+    name: "CRIF",
+    image: "/clients/crif.svg",
     width: 130,
   },
 ];
