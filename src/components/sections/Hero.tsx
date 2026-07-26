@@ -12,14 +12,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-white py-6 lg:py-8"
+      className="bg-white py-8"
     >
       <Container>
         <div className="overflow-hidden rounded-[36px] bg-[#EEF5FF] shadow-xl">
-          <div className="grid items-center gap-10 px-8 py-8 lg:grid-cols-[1fr_0.95fr] lg:px-14 lg:py-10">
+          <div className="grid items-center gap-10 px-8 py-8 lg:grid-cols-[1.2fr_0.8fr] lg:px-16 lg:py-12">
             {/* Left */}
             <div>
-              <h1 className="text-[52px] lg:text-[68px] font-bold leading-tight text-black ">
+              <h1 className="text-[44px] leading-[1.05] lg:text-[58px] font-bold leading-tight text-black ">
                 Next-Gen{" "}
                 <span className="text-[#2563EB]">
                   Expertise
@@ -31,12 +31,12 @@ export default function Hero() {
                 </span>
               </h1>
 
-              <p className="mt-10 max-w-xl text-[22px] leading-relaxed text-gray-900">
+              <p className="mt-8 max-w-[480px] text-[18px] leading-9 leading-relaxed text-gray-900">
                 Cultivate high-performance teams through
                 expert learning.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-8">
+              <div className="mt-8 flex flex-wrap gap-6">
                 {features.map((item) => (
                   <div
                     key={item}
@@ -44,30 +44,30 @@ export default function Hero() {
                   >
                     <CircleCheckBig
                       className="text-green-600"
-                      size={24}
+                      size={20}
                     />
 
-                    <span className="text-lg font-medium">
+                    <span className="text-base font-medium">
                       {item}
                     </span>
                   </div>
                 ))}
               </div>
 
-              <button className="mt-12 rounded-xl bg-[#2563EB] px-10 py-4 text-xl font-semibold text-white shadow-lg transition hover:bg-blue-700">
+              <button className="mt-12 rounded-xl bg-[#2563EB] px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-blue-700">
                 Enquire Now
               </button>
             </div>
 
             {/* Right */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center lg:justify-end lg:pt-4">
               <Image
                 src="/images/hero.webp"
                 alt="Enterprise Learning"
-                width={760}
-                height={720}
+                width={560}
+                height={600}
                 priority
-                className="h-auto w-full max-w-[600px]"
+                className="w-full max-w-[500px] h-auto object-contain"
               />
             </div>
           </div>
